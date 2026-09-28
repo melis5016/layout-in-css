@@ -6,10 +6,26 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+
+      *{
+        margin: .5em;
+      }
+
       body {
         display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 2fr 7fr 1fr;
       }
       /* Doe hier jouw ding! */
+
+      header {
+        grid-column: 1/-1;
+      }
+
+      footer {
+        grid-column: 1/-1;
+      }
+
     </style>
   </head>
   <body id="basic-layout-1">
